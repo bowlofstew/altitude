@@ -12,7 +12,7 @@ namespace altitude {
          * @param altitude in meters
          * @return air pressure in Pascal
          */
-        double PressureAtAltitude(double altitude) {
+        double PressureAtAltitude(int altitude) {
             return altitude::constants::pressures::pascal::STANDARD_ATMOSPHERE * pow((1 - 2.25577 * pow(10.0, -5.0) * altitude), 5.25588);
         }
 
